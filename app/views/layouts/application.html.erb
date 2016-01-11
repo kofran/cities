@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cities</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <ul id="menu_sup">
+    <li><%= link_to 'Home', controller: 'home' %></li>
+    <li><%= link_to 'Cities', controller: 'cities' %></li>
+    <li><%= link_to 'States', controller: 'states' %></li>
+    <ul>
+      <li><%= link_to 'New', controller: 'states', action: 'new' %></li>
+    </ul>
+  </ul>
+
+<%= yield %>
+
+</body>
+</html>
