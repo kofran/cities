@@ -11,10 +11,13 @@
   <ul id="menu_sup">
     <li><%= link_to 'Home', controller: 'home' %></li>
     <li><%= link_to 'Cities', controller: 'cities' %></li>
+      <ul>
+        <li><%= link_to 'New', controller: 'cities', action: 'new' %></li>
+      </ul>
     <li><%= link_to 'States', controller: 'states' %></li>
-    <ul>
-      <li><%= link_to 'New', controller: 'states', action: 'new' %></li>
-    </ul>
+      <ul>
+        <li><%= link_to 'New', controller: 'states', action: 'new' %></li>
+      </ul>
   </ul>
 
 <%= yield %>

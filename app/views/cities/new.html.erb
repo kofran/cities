@@ -1,0 +1,5 @@
+<%= form_for @city, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <p>New city name: <%= f.text_field :name %></p>
+  <p>Select an State: <%= f.select :name, State.all.collect { |p| [ p.name, p.id ] } %></p>
+  <%= f.submit "Create" %>
+<% end %>

@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
   get 'states/index'
-
-  get 'home/index'
-  get 'cities/index'
-  get 'states/index'
   get 'states/new'
   post 'states/create'
+
+  get 'home/index'
+
+  get 'cities/index'
+  get 'cities/new'
+  post 'cities/create'
+
+
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
