@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get 'cities/index'
   get 'cities/new'
+  get 'cities/create'
   post 'cities/create'
 
 

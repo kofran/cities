@@ -11,8 +11,8 @@ class CitiesController < ApplicationController
 
   def create
     @city = City.new(city_params)
-    if @city.save
-      redirect_to :back
+    if @city.save(:validate=> true)
+      render 'index'
     else
       render :new
     end
