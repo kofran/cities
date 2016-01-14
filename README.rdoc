@@ -1,6 +1,6 @@
 == README
 
-This is a very simple app to practice how to create a database with to tables.
+This is a very simple app to practice how to create a database with two tables.
 
 Dependencies:
 	- ruby 2.1.5
