@@ -1,0 +1,10 @@
+<h1>List#index</h1>
+<p>Find me in app/views/list/index.html.erb</p>
+
+<h1>Cities!</h1>
+<ul>
+  <% @ci.each do |c| %>
+    <li>Name: <%= c.name %> - ID: <%= c.id %></li>
+  <% end %>
+
+</ul>

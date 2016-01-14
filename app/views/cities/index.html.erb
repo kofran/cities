@@ -1,1 +1,7 @@
 <h1>Cities!</h1>
+<ul>
+  <% @cities.each do |c| %>
+    <li>Name: <%= c.name %> - ID: <%= c.id %></li>
+  <% end %>
+  
+</ul>

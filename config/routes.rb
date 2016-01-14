@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'list/index'
+
   get 'states/index'
   get 'states/new'
   post 'states/create'

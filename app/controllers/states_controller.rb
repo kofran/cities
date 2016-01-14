@@ -1,5 +1,5 @@
 class StatesController < ApplicationController
-  # select all the cities order by name
+  # select all the states order by name
   def index
     @states = State.all.order(name: :asc)
   end
