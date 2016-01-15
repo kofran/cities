@@ -2,7 +2,7 @@ class CitiesController < ApplicationController
   def index
     #@cities = City.all.order(state_id: :asc)
     #@cities = State.joins(:cities).select('cities.name, states.name')
-    @cities = City.joins(:states).select('cities.name, states.name')
+    @cities = City.joins(:state).select('cities.name, states.name')
   end
 
   def new
